@@ -1,0 +1,62 @@
+ {
+    "characters": [{
+        "class": "Fighter",
+        "HP": 10,
+        "ablity-required": {
+            "st": 9,
+            "dx": 0,
+            "cn": 0,
+            "in": 0,
+            "ws": 0,
+            "ch": 0
+        },
+        "image": "download-1.jpg"
+
+},
+{
+    "class": "Wizard",
+    "HP": 4,
+    "ablity-required": {
+            "st": 0,
+            "dx": 0,
+            "cn": 0,
+            "in": 9,
+            "ws": 0,
+            "ch": 0
+
+
+    },
+    "image": "donload-2.jpg"
+},
+{
+    "class": "Cleric",
+    "HP": 8,
+    "ablity-required": {
+        "st": 0,
+        "dx": 0,
+        "cn": 0,
+        "in": 0,
+        "ws": 9,
+        "ch": 0 
+
+    },
+    "image": "images.jpg"
+},
+{
+    "class": "Thief",
+    "HP": 6,
+    "ability-required": {
+            "st": 0,
+            "dx": 9,
+            "cn": 0,
+            "in": 0,
+            "ws": 0,
+            "ch": 0
+
+    },
+    "image":"download-3.jpg"
+}
+
+        
+]
+    }
