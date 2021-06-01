@@ -1,56 +1,34 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
+
 export default class Home extends Component {
 
-    constructor(){
-        super()
-        this.state={
-            stRoll: 0,
-            dxRoll: 0,
-            cnRoll: 0,
-            inRoll: 0,
-            wsRoll: 0,
-            chRoll: 0,
-
-        }
-    }
-
-    handleClick = (event) => {
-     let rollValue = Math.floor((Math.random()*16)+3)
-     console.log(rollValue)
-     this.setState({
-         [event.target.name]: rollValue,
-         
-             
-             
-         
-        })
-    }
-
+    
     render() {
-        console.log(this.state)
+
+        const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll}=this.props.abilities
         return (
             <div>
-                <h3>Roll For Ablities</h3>
-                STRENGTH  <button name='stRoll' onClick={this.handleClick}>roll</button>{this.state.stRoll}<br></br>
+                <h3>Roll For Abilities</h3>
+                STRENGTH  <button name='stRoll' onClick={this.props.handleRoll}>roll</button>{stRoll}<br></br>
                 <br></br>
-                DEXTERITY <button name='dxRoll' onClick={this.handleClick}>roll</button>{this.state.dxRoll}<br></br>
+                DEXTERITY <button name='dxRoll' onClick={this.props.handleRoll}>roll</button>{dxRoll}<br></br>
                 <br></br>
-                CONSTITUTION <button name='cnRoll' onClick={this.handleClick}>roll</button>{this.state.cnRoll}<br></br>
+                CONSTITUTION <button name='cnRoll' onClick={this.props.handleRoll}>roll</button>{cnRoll}<br></br>
                 <br></br>
-                INTELLIGENCE <button name='inRoll' onClick={this.handleClick}>roll</button>{this.state.inRoll}<br></br>
+                INTELLIGENCE <button name='inRoll' onClick={this.props.handleRoll}>roll</button>{inRoll}<br></br>
                 <br></br>
-                WISDOM <button name='wsRoll' onClick={this.handleClick}>roll</button>{this.state.wsRoll}<br></br>
+                WISDOM <button name='wsRoll' onClick={this.props.handleRoll}>roll</button>{wsRoll}<br></br>
                 <br></br>
-                CHARISMA <button name='chRoll' onClick={this.handleClick}>roll</button>{this.state.chRoll}
+                CHARISMA <button name='chRoll' onClick={this.props.handleRoll}>roll</button>{chRoll}
                 <h2>when done press "submit"</h2>
-                <NavLink to="/class" exact>SUBMIT</NavLink>
-            
-            
+                <NavLink className="submit" to="/class" exact>SUBMIT</NavLink>
+                <br></br>
+                <br></br>
             </div>
-
-                       
+            
+                
 
             
             
