@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import images from '../images.jpg'
+import images from "../download-1.jpg"
 import download3 from '../download-3.jpg'
 
 
@@ -9,8 +9,9 @@ export default class Class extends Component {
     
     classList=()=>{
        const list=this.props.classes.map((name)=>{
+             
        const image = name.image
-           return  <li onClick={this.props.handleClick}>{name.class}<br></br><img  src={image}  />{name.image}</li>
+           return  <li onClick={this.props.handleClick}>{name.class}<br></br></li>
        })
              
              return <ul>{list}</ul>
@@ -25,6 +26,8 @@ export default class Class extends Component {
               <img src={download3}/>
                {this.classList()}
               <button onClick={this.props.handleHP}>Hit Points</button><br></br>
+              <br></br>
+              Class:{this.props.abilities.classType}<br></br>
               <br></br>
               HP:{this.props.abilities.hp}<br></br>
               <br></br>
