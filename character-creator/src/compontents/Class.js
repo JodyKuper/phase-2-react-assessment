@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import images from '../images.jpg'
+import download3 from '../download-3.jpg'
 
 
 export default class Class extends Component {
 
     
     classList=()=>{
-       const list=this.props.classes.map((name)=>
-            <li onClick={this.props.handleClick}>{name.class}<br></br><img  src={name.image}  /></li>
-             )
+       const list=this.props.classes.map((name)=>{
+       const image = name.image
+           return  <li onClick={this.props.handleClick}>{name.class}<br></br><img  src={image}  />{name.image}</li>
+       })
              
              return <ul>{list}</ul>
        }
@@ -19,7 +21,8 @@ export default class Class extends Component {
         const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll}=this.props.abilities
         return (
             <div>
-              <h2>Select Classes</h2>
+              <h2>Select Classes</h2><br></br>
+              <img src={download3}/>
                {this.classList()}
               <button onClick={this.props.handleHP}>Hit Points</button><br></br>
               <br></br>
@@ -43,8 +46,8 @@ export default class Class extends Component {
                      <br></br>
               CHARISMA:{chRoll}<br></br>
                      <br></br>
-                     <img src= {images}alt="thief" width='100px' height='100px'/>
               <NavLink to='/character' exact>DONE </NavLink>
+              <br></br>
               <br></br> 
                     
             </div>

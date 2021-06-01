@@ -10,7 +10,7 @@
             "ws": 0,
             "ch": 0
         },
-        "image": "/download-1.jpg"
+        "image": "../download-1.jpg"
 
 },
 {
@@ -26,7 +26,7 @@
 
 
     },
-    "image": "/download-2.jpg"
+    "image": "../download-2.jpg"
 },
 {
     "class": "Cleric",
@@ -40,7 +40,7 @@
         "ch": 0 
 
     },
-    "image": "/images.jpg"
+    "image": "../images.jpg"
 },
 {
     "class": "Thief",
@@ -54,9 +54,9 @@
             "ch": 0
 
     },
-    "image":"download-4.jpg"
+    "image":"../download-4.jpg"
 }
 
         
 ]
-}
+ }
