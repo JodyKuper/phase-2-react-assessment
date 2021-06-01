@@ -41,11 +41,11 @@ export default class App extends Component {
 
  handleRoll = (event) => {
     let rollValue = Math.floor(Math.random() * 16 + 3);
-    // console.log(rollValue);
     this.setState({
       [event.target.name]: rollValue,
     })
   }
+  
   handleClick = (event) =>{
   let newClass=event.target.innerText
   this.setState({
@@ -112,7 +112,7 @@ export default class App extends Component {
       <Router>
         <div>
           <h1>
-            ASTONISHING SWORDSMEN<br></br>OF<br></br> HYPERBOREA
+            ASTONISHING SWORDSMEN AND SORCERERS<br></br>OF<br></br> HYPERBOREA
           </h1>
 
           <Switch>

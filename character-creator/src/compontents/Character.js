@@ -16,7 +16,7 @@ export default class Character extends Component {
                      <br></br>
                      DEXTERITY:{dxRoll}<br></br>
                      <br></br>
-                     CONSTSTITUTION:{cnRoll}<br></br>
+                     CONSTITUTION:{cnRoll}<br></br>
                      <br></br>
                      INTELLIGENCE:{inRoll}<br></br>
                      <br></br>
