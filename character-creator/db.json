@@ -1,62 +1,209 @@
- {
-    "characters": [{
-        "class": "Fighter",
-        "HP": 10,
-        "abilities": {
-            "st": 9,
-            "dx": 0,
-            "cn": 0,
-            "in": 0,
-            "ws": 0,
-            "ch": 0
-        },
-        "image": "../download-1.jpg"
-
-},
 {
-    "class": "Wizard",
-    "HP": 4,
-    "abilities": {
-            "st": 0,
-            "dx": 0,
-            "cn": 0,
-            "in": 9,
-            "ws": 0,
-            "ch": 0
-
-
+  "classes": [
+    {
+      "class": "Fighter",
+      "HP": 10,
+      "abilities": {
+        "st": 9,
+        "dx": 0,
+        "cn": 0,
+        "in": 0,
+        "ws": 0,
+        "ch": 0
+      },
+      "image": "download-1"
     },
-    "image": "../download-2.jpg"
-},
-{
-    "class": "Cleric",
-    "HP": 8,
-    "abilities": {
+    {
+      "class": "Wizard",
+      "id": 2,
+      "HP": 4,
+      "abilities": {
+        "st": 0,
+        "dx": 0,
+        "cn": 0,
+        "in": 9,
+        "ws": 0,
+        "ch": 0
+      },
+      "image": "download-2"
+    },
+    {
+      "class": "Cleric",
+      "id": 3,
+      "HP": 8,
+      "abilities": {
         "st": 0,
         "dx": 0,
         "cn": 0,
         "in": 0,
         "ws": 9,
-        "ch": 0 
-
+        "ch": 0
+      },
+      "image": "images"
     },
-    "image": "../images.jpg"
-},
-{
-    "class": "Thief",
-    "HP": 6,
-    "abilities": {
-            "st": 0,
-            "dx": 9,
-            "cn": 0,
-            "in": 0,
-            "ws": 0,
-            "ch": 0
-
+    {
+      "class": "Thief",
+      "id": 4,
+      "HP": 6,
+      "abilities": {
+        "st": 0,
+        "dx": 9,
+        "cn": 0,
+        "in": 0,
+        "ws": 0,
+        "ch": 0
+      },
+      "image": "download-4"
+    }
+  ],
+  "character": [
+    {
+      "name": "asdf",
+      "classType": "Wizard",
+      "hp": 8,
+      "st": 6,
+      "dx": 12,
+      "cn": 7,
+      "int": 10,
+      "ws": 15,
+      "ch": 4,
+      "id": 1
     },
-    "image":"../download-4.jpg"
+    {
+      "name": "hi",
+      "classType": "Thief",
+      "hp": 5,
+      "st": 12,
+      "dx": 17,
+      "cn": 13,
+      "int": 18,
+      "ws": 5,
+      "ch": 12,
+      "id": 2
+    },
+    {
+      "name": "hi",
+      "classType": "",
+      "hp": 3,
+      "id": 3
+    },
+    {
+      "name": "asfd",
+      "classType": "Cleric",
+      "hp": 6,
+      "id": 4
+    },
+    {
+      "name": "joe",
+      "classType": "Wizard",
+      "hp": 4,
+      "st": 4,
+      "dx": 8,
+      "cn": 5,
+      "int": 4,
+      "ws": 7,
+      "ch": 8,
+      "id": 5
+    },
+    {
+      "name": "zc",
+      "hp": 4,
+      "st": 11,
+      "dx": 11,
+      "cn": 3,
+      "int": 15,
+      "ws": 17,
+      "ch": 7,
+      "id": 6
+    },
+    {
+      "name": "sd",
+      "hp": 6,
+      "st": 13,
+      "dx": 16,
+      "cn": 6,
+      "int": 10,
+      "ws": 12,
+      "ch": 4,
+      "id": 7
+    },
+    {
+      "name": "asd",
+      "hp": 6,
+      "st": 7,
+      "dx": 12,
+      "cn": 12,
+      "int": 8,
+      "ws": 8,
+      "ch": 9,
+      "id": 8
+    },
+    {
+      "name": "gimili",
+      "hp": 5,
+      "st": 9,
+      "dx": 9,
+      "cn": 15,
+      "int": 14,
+      "ws": 7,
+      "ch": 14,
+      "id": 9
+    },
+    {
+      "name": "",
+      "hp": 9,
+      "st": 8,
+      "dx": 15,
+      "cn": 6,
+      "int": 10,
+      "ws": 5,
+      "ch": 18,
+      "id": 10
+    },
+    {
+      "name": "sad",
+      "hp": 0,
+      "st": 17,
+      "dx": 16,
+      "cn": 11,
+      "int": 4,
+      "ws": 17,
+      "ch": 4,
+      "id": 11
+    },
+    {
+      "name": "dsasa",
+      "classType": "",
+      "hp": 4,
+      "st": 13,
+      "dx": 6,
+      "cn": 3,
+      "int": 16,
+      "ws": 12,
+      "ch": 17,
+      "id": 12
+    },
+    {
+      "name": "sdfdf",
+      "hp": 5,
+      "st": 5,
+      "dx": 13,
+      "cn": 18,
+      "int": 16,
+      "ws": 9,
+      "ch": 14,
+      "id": 13
+    },
+    {
+      "name": "fred",
+      "hp": 1,
+      "st": 8,
+      "dx": 12,
+      "cn": 8,
+      "int": 13,
+      "ws": 15,
+      "ch": 10,
+      "id": 14
+    }
+  ]
 }
-
-        
-]
- }

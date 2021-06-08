@@ -6,22 +6,21 @@ export default class Home extends Component {
 
     
     render() {
-
-        const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll}=this.props.abilities
+        const{st, dx, cn, int, ws, ch}=this.props.abilities
         return (
             <div>
                 <h3>Roll For Abilities</h3>
-                STRENGTH  <button name='stRoll' onClick={this.props.handleRoll}>roll</button>{stRoll}<br></br>
+                STRENGTH  <button name='st' onClick={this.props.handleRoll}>roll</button>{st}<br></br>
                 <br></br>
-                DEXTERITY <button name='dxRoll' onClick={this.props.handleRoll}>roll</button>{dxRoll}<br></br>
+                DEXTERITY <button name='dx' onClick={this.props.handleRoll}>roll</button>{dx}<br></br>
                 <br></br>
-                CONSTITUTION <button name='cnRoll' onClick={this.props.handleRoll}>roll</button>{cnRoll}<br></br>
+                CONSTITUTION <button name='cn' onClick={this.props.handleRoll}>roll</button>{cn}<br></br>
                 <br></br>
-                INTELLIGENCE <button name='inRoll' onClick={this.props.handleRoll}>roll</button>{inRoll}<br></br>
+                INTELLIGENCE <button name='int' onClick={this.props.handleRoll}>roll</button>{int}<br></br>
                 <br></br>
-                WISDOM <button name='wsRoll' onClick={this.props.handleRoll}>roll</button>{wsRoll}<br></br>
+                WISDOM <button name='ws' onClick={this.props.handleRoll}>roll</button>{ws}<br></br>
                 <br></br>
-                CHARISMA <button name='chRoll' onClick={this.props.handleRoll}>roll</button>{chRoll}
+                CHARISMA <button name='ch' onClick={this.props.handleRoll}>roll</button>{ch}
                 <h2>when done press "submit"</h2>
                 <NavLink className="submit" to="/class" exact>SUBMIT</NavLink>
                 <br></br>
@@ -29,7 +28,6 @@ export default class Home extends Component {
             </div>
             
                 
-
             
             
         )
