@@ -6,21 +6,22 @@ export default class Home extends Component {
 
     
     render() {
-        const{st, dx, cn, int, ws, ch}=this.props.abilities
+        const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll}=this.props.abilities
         return (
             <div>
+                <NavLink to="/characterlist" exact>List of Characters</NavLink>
                 <h3>Roll For Abilities</h3>
-                STRENGTH  <button name='st' onClick={this.props.handleRoll}>roll</button>{st}<br></br>
+                STRENGTH  <button name='stRoll' onClick={this.props.handleRoll}>roll</button>{stRoll}<br></br>
                 <br></br>
-                DEXTERITY <button name='dx' onClick={this.props.handleRoll}>roll</button>{dx}<br></br>
+                DEXTERITY <button name='dxRoll' onClick={this.props.handleRoll}>roll</button>{dxRoll}<br></br>
                 <br></br>
-                CONSTITUTION <button name='cn' onClick={this.props.handleRoll}>roll</button>{cn}<br></br>
+                CONSTITUTION <button name='cnRoll' onClick={this.props.handleRoll}>roll</button>{cnRoll}<br></br>
                 <br></br>
-                INTELLIGENCE <button name='int' onClick={this.props.handleRoll}>roll</button>{int}<br></br>
+                INTELLIGENCE <button name='inRoll' onClick={this.props.handleRoll}>roll</button>{inRoll}<br></br>
                 <br></br>
-                WISDOM <button name='ws' onClick={this.props.handleRoll}>roll</button>{ws}<br></br>
+                WISDOM <button name='wsRoll' onClick={this.props.handleRoll}>roll</button>{wsRoll}<br></br>
                 <br></br>
-                CHARISMA <button name='ch' onClick={this.props.handleRoll}>roll</button>{ch}
+                CHARISMA <button name='chRoll' onClick={this.props.handleRoll}>roll</button>{chRoll}
                 <h2>when done press "submit"</h2>
                 <NavLink className="submit" to="/class" exact>SUBMIT</NavLink>
                 <br></br>

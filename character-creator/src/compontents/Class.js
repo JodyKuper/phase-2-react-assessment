@@ -9,8 +9,8 @@ export default class Class extends Component {
         classes: []      
        } 
        
-       //list of classes//
-       fetchCharacters = () => {
+       //list of classes
+       fetchClass = () => {
               fetch("http://localhost:3001/classes")
                 .then((res) => res.json())
                 .then((data) => {
@@ -22,24 +22,21 @@ export default class Class extends Component {
             };
 
             componentDidMount() {
-              this.fetchCharacters()
+              this.fetchClass()
             }
           
 
     //create list of classes//
     classList=()=>{
-           console.log(this.state)
        const list=this.state.classes.map((name)=>{
-       // const image = require(`../imgs/${name.image}.jpg`)
-           return  <li onClick={() => this.props.handleClick()}>{name.class}<br></br></li>
+           return  <li onClick={this.props.handleClick}>{name.class}<br></br></li>
        })
-             
              return <ul>{list}</ul>
        }
 
 
     render() {
-        const{st, dx, cn, int, ws, ch, classType, name, hp}=this.props.abilities
+        const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll, classType, hp}=this.props.abilities
         return (
             <div>
               <h2>Select Classes</h2><br></br>
@@ -57,19 +54,19 @@ export default class Class extends Component {
                     </input>
                 </form><br></br>
                      <br></br>
-              STRENGTH:{st}<br></br>
+              STRENGTH:{stRoll}<br></br>
                      <br></br>
-              DEXTERITY:{dx}<br></br>
+              DEXTERITY:{dxRoll}<br></br>
                      <br></br>
-              CONSTSTITUTION:{cn}<br></br>
+              CONSTSTITUTION:{cnRoll}<br></br>
                      <br></br>
-              INTELLIGENCE:{int}<br></br>
+              INTELLIGENCE:{inRoll}<br></br>
                      <br></br>
-              WISDOM:{ws}<br></br>
+              WISDOM:{wsRoll}<br></br>
                      <br></br>
-              CHARISMA:{ch}<br></br>
+              CHARISMA:{chRoll}<br></br>
                      <br></br>
-              <NavLink  to='/character' exact>DONE </NavLink>
+              <NavLink  to='/characters' exact>DONE </NavLink>
               <br></br>
               <br></br> 
                     
