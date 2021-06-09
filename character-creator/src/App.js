@@ -38,8 +38,7 @@ export default class App extends Component {
   }
 
   handleCharacter=(event) =>{
-    debugger
-
+    
   }
   
   //generate Hp//
@@ -75,11 +74,11 @@ export default class App extends Component {
         .then(function(response) {
           return response.json();
         })
-        .then(function(object) {
+        .then((object)=> {
           console.log(object)
-          // this.setState({
-          //  formName: object.formName
-          // })
+          this.setState({
+          characters: object
+          })
           })
         
       
@@ -97,28 +96,30 @@ export default class App extends Component {
   }
 
 
-  renderClass =(routeProps) =>{
+  renderClass =() =>{
 
     return <Class
     handleSubmit={this.handleSubmit}
     handleChange={this.handleChange}
     handleHP={this.handleHP}
     handleClick={this.handleClick} 
-    {...routeProps} abilities={this.state}
-    {...routeProps} classes={this.state.classes}
+     abilities={this.state}
+    classes={this.state.classes}
    />
   }
 
-  renderCharacter =(routeProps) =>{
+  renderCharacter =() =>{
     return <Characters
     handleSubmit={this.handleSubmit}
-    {...routeProps} abilities={this.state}
+     abilities={this.state}
    />
   }
 
-  renderAnyCharacter=() =>{
+  renderAnyCharacter=(routerprops) =>{
     return<CharacterList
     handleCharacter={this.handleCharacter}
+    {...routerprops} characters={this.state.characters}
+
     />
 
   }
@@ -139,9 +140,9 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" render={this.renderHome} />
             <Route exact path="/class" render={this.renderClass} />
-            <Route exact path="/characters" render={this.renderCharacter} />
+            <Route  path="/characters" render={this.renderCharacter} />
             <Route exact path="/characterlist" render={this.renderAnyCharacter} />
-            <Route path="/characters/:id" render={this.renderAnyCharacter} />
+            {/* <Route path="/characters/:id" render={this.renderAnyCharacter} /> */}
           </Switch>
         </div>
       </Router>
