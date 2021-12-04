@@ -10,9 +10,13 @@ This app uses React, HTML and CSS on the frontend and JSON server to provide a s
 
 ## To Create a Charecter
 
-Start the frontend React server in the root directory terminal:
+Start the frontend React server in the root directory terminal(phase-2-react-assessment), cd into character-creator
 ```
 npm start
+```
+Start db.json server
+```
+json-server --watch db.json --port 3001
 ```
 ## Requirements
 
