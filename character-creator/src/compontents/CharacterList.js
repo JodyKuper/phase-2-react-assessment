@@ -6,7 +6,6 @@ export default class CharacterList extends Component {
     state = {
         characters: [],
         classId: 0
-
     }
 
     fetchCharacters = () => {
@@ -25,30 +24,9 @@ export default class CharacterList extends Component {
         this.fetchCharacters()
       }
     
-    //   fetchId = () => {
-          
-    //     fetch("http://localhost:3001/characters")
-    //       .then((res) => res.json())
-    //       .then((data) => {
-    //         console.log(data.map(character=>character))
-    //         });
-        
-    //     };
-    //   componentDidMount() {
-    //     this.fetchId()
-    //   }
-
-      characterList=()=>{
-    const list=this.state.characters.map((name)=>{
-        return  <Link onClick={this.props.handleCharacter} 
-        to={`/characters/${name.id}`}><br></br>{name.formName}<br></br>{name.classType}<br></br></Link>
-        
-    })
-          return <ul>{list}</ul>
-   }   
-
+   
     render() {
-        console.log(this.state.classId)
+        console.log(this.state.class)
         return (
             <div>
                 <h2>YOUR CHARACTERS</h2>

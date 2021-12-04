@@ -9,7 +9,6 @@ export default class Home extends Component {
         const{stRoll, dxRoll, cnRoll, inRoll, wsRoll, chRoll}=this.props.abilities
         return (
             <div>
-                <NavLink to="/characterlist" exact>List of Characters</NavLink>
                 <h3>Roll For Abilities</h3>
                 STRENGTH  <button name='stRoll' onClick={this.props.handleRoll}>roll</button>{stRoll}<br></br>
                 <br></br>

@@ -445,6 +445,54 @@
       "wsRoll": 10,
       "chRoll": 18,
       "id": 29
+    },
+    {
+      "formName": "body",
+      "classType": "Cleric\n",
+      "hp": 4,
+      "stRoll": 4,
+      "dxRoll": 15,
+      "cnRoll": 11,
+      "inRoll": 8,
+      "wsRoll": 12,
+      "chRoll": 6,
+      "id": 30
+    },
+    {
+      "formName": "joe",
+      "classType": "Thief\n",
+      "hp": 4,
+      "stRoll": 4,
+      "dxRoll": 10,
+      "cnRoll": 5,
+      "inRoll": 5,
+      "wsRoll": 6,
+      "chRoll": 13,
+      "id": 31
+    },
+    {
+      "formName": "dafsds",
+      "classType": "Thief\n",
+      "hp": 2,
+      "stRoll": 15,
+      "dxRoll": 7,
+      "cnRoll": 18,
+      "inRoll": 13,
+      "wsRoll": 4,
+      "chRoll": 6,
+      "id": 32
+    },
+    {
+      "formName": "df",
+      "classType": "Wizard\n",
+      "hp": 9,
+      "stRoll": 11,
+      "dxRoll": 10,
+      "cnRoll": 5,
+      "inRoll": 13,
+      "wsRoll": 18,
+      "chRoll": 10,
+      "id": 33
     }
   ]
 }

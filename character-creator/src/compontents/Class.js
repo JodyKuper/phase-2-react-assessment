@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { ToastHeader } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'
 
 
@@ -20,7 +19,6 @@ export default class Class extends Component {
                   });
                 });
             };
-
             componentDidMount() {
               this.fetchClass()
             }
@@ -75,5 +73,5 @@ export default class Class extends Component {
     }
 }
 
-       
+      
 

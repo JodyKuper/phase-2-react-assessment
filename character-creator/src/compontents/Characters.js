@@ -25,8 +25,6 @@ export default class Characters extends Component {
                      <br></br>
                      CHARISMA:{chRoll}<br></br>
                      <br></br>
-                     <NavLink to="/characterlist">List of Characters</NavLink><br></br>
-                     <br></br>
                      <NavLink to='/' excact>New Character</NavLink>
                      <br></br>
                      <br></br>
